@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: talkies
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/blog_app
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: create # or create, validate, none based on your requirements
+    show-sql: true # Optional: to show generated SQL in the logs
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+server:
+  port: 3232
+
